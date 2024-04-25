@@ -10,30 +10,88 @@
     <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
     <style type="text/css">body { width: auto; }</style>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css" />
-    
 </head>
 <body>
-    <h1>welcome to random facts and images</h1>
-    <h1>Random Events</h1>
-    <p>{{ event }}</p>
-
-    <h1>Are you Bored?</h1>
-    <p>{{ activity }}</p>
-
-    <div class="container">
-        <div class="fact-quote">
-            <div class="fact">
-                <h2>Random Fact</h2>
-                <p>{{ fact }}</p>
-            </div>
-            <div class="quote">
-                <h2>Random Quote</h2>
-                <p>{{ quote }}</p>
-            </div>
-        </div>
-        <img src="{{ dog }}" alt="Random dog image">
+  <div class="container3">
+    <nav class="navbar">
+        <ul id="menuItem">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Account</a></li>
+        </ul>
+    </nav>
+    <div class="section2">
+        <h2>Random Events</h2>
+        <p>{{ event }}</p><br>
+        <button><a href="" class="btn">Explore Now &#8594;</a></button>
     </div>
+    <div class="section1">
+        <h2>Are you Bored?</h2>
+        <p>{{ activity }}</p><br>
+        <button><a href="" class="btn">Explore Now &#8594;</a></button>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="title">Featured Dog breed Image and Quote &#9996;</h2>
+    <div class="small">
+        <div class="dog-image">
+            <img src="{{ dog }}" alt="Random dog image">
+        </div>
+        <div class="quote">
+            <h2>Random Quote &#9997;</h2>
+            <p>{{ quote }}</p>
+        </div>
+    </div>
+  </div>
+  <div class="container2">
+    <h2 class="title">Worthy taking a look &#9996;</h2>
+    <div class="section">
+        <h1 class="hh">Bet you didn't know...</h1>
+        <ul>
+            <li>It is impossible for most people to lick their own elbow. (try it!)</li>
+            <li>A crocodile cannot stick its tongue out.</li>
+            <li>A shrimp's heart is in its head.</li>
+            <li>It is physically impossible for pigs to look up into the sky.</li>
+            <li>The "sixth sick sheik's sixth sheep's sick" is believed to be the toughest tongue twister in the English language.</li>
+            <li>If you sneeze too hard, you could fracture a rib.</li>
+            <li>Wearing headphones for just an hour could increase the bacteria in your ear by 700 times.</li>
+            <li>In the course of an average lifetime, while sleeping you might eat around 70 assorted insects and 10 spiders, or more.</li>
+            <li>Some lipsticks contain fish scales.</li>
+            <li>Cat urine glows under a black-light.</li>
+            <li>Like fingerprints, everyone's tongue print is different.</li>
+            <li>Rubber bands last longer when refrigerated.</li>
+            <li>There are 293 ways to make change for a dollar.</li>
+            <li>A shark is the only known fish that can blink with both eyes.</li>
+            <li>"Dreamt" is the only English word that ends in the letters "mt".</li>
+            <li>Almonds are a member of the peach family.</li>
+            <li>Maine is the only state that has a one-syllable name.</li>
+            <li>There are only four words in the English language which end in "dous": tremendous, horrendous, stupendous, and hazardous.</li>
+            <li>Los Angeles' full name is "El Pueblo de Nuestra Senora la Reina de los Angeles de Porciuncula".</li>
+            <li>A cat has 32 muscles in each ear.</li>
+            <li>An ostrich's eye is bigger than its brain.</li>
+            <li>Tigers have striped skin, not just striped fur.</li>
+            <li>In many advertisements, the time displayed on a watch is 10:10.</li>
+            <li>A dime has 118 ridges around the edge.</li>
+            <li>The giant squid has the largest eyes in the world.</li>
+            <li>Most people fall asleep in seven minutes.</li>
+            <li>"Stewardesses" is the longest word that is typed with only the left hand.</li>
+        </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <h3>FOLLOW US </h3>
+    <p>follow us for more refreshing quotes and images</p>
+    <ul>
+      <a href=""><li>FACEBOOK</li></a>
+      <a href=""><li>TWITTER</li></a>
+      <a href=""><li>INSTAGRAM</li></a>
+      <a href=""><li>YOUTUBE</li></a>
+    </ul>
+  </div>
   <hr>
-  <p class="copyright">© @IOM2024</p>
+  <p class="copy">copyright 2024</p>
+  <h3> Designed by <button><a class="btn">IOM2024</a></h3></button>
 </body>
 </html>
+
