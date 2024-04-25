@@ -1,29 +1,39 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Random Api Blog</title>
     <meta name="description" content="description"/>
     <meta name="author" content="author" />
     <meta name="keywords" content="keywords" />
-    <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
-    <style type="text/css">.body { width: auto; }</style>
-    <link
-      rel="stylesheet"
-      href="//fonts.googleapis.com/css?family=font1|font2|etc"
-      type="text/css"
-    />
-  </head>
-  <body>
-<h1>welcome to random facts and images</h1>
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
+    <style type="text/css">body { width: auto; }</style>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css" />
+    
+</head>
+<body>
+    <h1>welcome to random facts and images</h1>
     <h1>Random Events</h1>
-    <p>{{event}}</p>
-    
-    <h1>Are you Bored?</h1>
-    <p>{{activity}}</p>
+    <p>{{ event }}</p>
 
-    <h1>Dog image and  Breed type</h1>
-    <img src="{{dog}}" alt="Random dog image">
-    
-  </body>
+    <h1>Are you Bored?</h1>
+    <p>{{ activity }}</p>
+
+    <div class="container">
+        <div class="fact-quote">
+            <div class="fact">
+                <h2>Random Fact</h2>
+                <p>{{ fact }}</p>
+            </div>
+            <div class="quote">
+                <h2>Random Quote</h2>
+                <p>{{ quote }}</p>
+            </div>
+        </div>
+        <img src="{{ dog }}" alt="Random dog image">
+    </div>
+  <hr>
+  <p class="copyright">© @IOM2024</p>
+</body>
 </html>
